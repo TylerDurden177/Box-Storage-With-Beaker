@@ -1,0 +1,30 @@
+This code defines a smart contract for a voting application. The smart contract is implemented as a class ARC34Application, which has several methods:
+
+__init__: constructor for the class, which initializes the contract with the encryption address and mnemonic.
+set_phase_1_end and set_phase_2_end: methods to set the end time for each phase of the voting.
+encrypt_record and decrypt_record: methods to encrypt and decrypt voting records.
+vote: method to allow an account to vote on a proposal.
+countVotes: method to count the number of votes received for each proposal.
+transferFunds: method to transfer funds to the proposal with the most votes if the voting deadline has passed.
+claim: method to allow the proposer to claim the funds if their proposal received the most votes.
+safetyChecks: method to add safety checks to ensure that the functions are being executed as intended.
+accessControl: method to add access control to ensure that only authorized accounts can perform certain actions.
+There are also several functions defined outside the class, including create, setup, setup2ndRound, setEncryptedRecord, vote, countVotes, transferFunds, claim, safetyChecks, and accessControl, which interact with the contract and perform different tasks.
+
+
+
+This code implements a smart contract for a voting application called ARC34Application. The contract includes the following functionality:
+
+Setting the end of the first and second phases of the voting process
+Encrypting and decrypting records
+Voting on proposals
+Counting the number of votes received for each proposal
+Transferring funds to the proposal with the most votes if the voting deadline has passed
+Allowing the proposer to claim the funds if their proposal received the most votes
+Adding safety checks to ensure that the functions are being executed as intended
+Adding access control to ensure that only authorized accounts can perform certain actions
+It should be noted that the code only provides a framework for the smart contract and may need to be completed or adjusted to fit the specific use case and requirements.
+
+
+
+
