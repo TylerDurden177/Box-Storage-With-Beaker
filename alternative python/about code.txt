@@ -1,0 +1,12 @@
+This code defines a Python class ARC34Application which implements a smart contract for a voting application. 
+The contract state includes information about the encryption address and mnemonic, start and end times for two phases of voting, and mappings for encrypted and decrypted vote records.
+The contract provides functions for initializing the contract state, setting up encryption information, adding encrypted votes, voting, verifying vote signatures, counting votes, and decrypting votes. 
+The code also defines a function get_current_time to return the current time, and a function check_authorization to check if the caller is authorized to perform an action. At the end of the code, an instance of the contract is created by initializing the ARC34Application class.
+
+This code is an implementation of an "ARC34Application" contract in Python. It sets up a contract with several methods such as "create", "setup", "setup2ndRound", "setEncryptedRecord", "vote", "verify_signature", "count_votes", "decrypt_record", "get_current_time", and "check_authorization".
+
+This contract is used for a voting system where encrypted records are set and then counted. 
+The code sets up the contract state with the "create" method and sets the encryption address, end of the first phase, and end of the second phase with the "setup" method. 
+The code also adds an encrypted record with the "setEncryptedRecord" method, verifies a vote with the "verify_signature" method, and counts the votes with the "count_votes" method.
+
+It is assumed that the methods "decrypt_record" and "check_authorization" have additional implementation details. The "get_current_time" method returns the current time as a Unix timestamp.
