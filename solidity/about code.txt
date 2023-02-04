@@ -1,0 +1,21 @@
+The code is a smart contract written in the Solidity programming language for the Ethereum blockchain. It implements a voting system for proposals, where the data for each proposal is encrypted. The contract has several functions to manage the different phases of the voting process, including setting up the encryption address and mnemonic, adding encrypted records, voting, counting votes, transferring funds, claiming funds, and decrypting proposal data.
+
+Here's a brief overview of each function:
+
+setup(address _encryptionAddress, uint256 _endOfFirstPhase): This function sets the encryption address and the end time of the first phase of the voting process.
+
+setup2ndRound(bytes32 _encryptionMnemonic, uint256 _endOfSecondPhase): This function sets the encryption mnemonic and the end time of the second phase of the voting process.
+
+setEncryptedRecord(uint256 proposalId, bytes32 encryptedData): This function adds an encrypted record for a proposal.
+
+vote(uint256 proposalId): This function allows a voter to cast a vote for a proposal.
+
+countVotes(): This function counts the votes for each proposal after the voting deadline has passed.
+
+transferFunds(): This function transfers funds associated with a proposal to the winner after the voting deadline has passed.
+
+claim(): This function allows a recipient to claim the funds associated with a proposal after the voting deadline has passed.
+
+decryptData(uint256 proposalId): This function allows the encryption address to decrypt the data for a proposal.
+
+The contract also has several state variables to store information such as the encryption address and mnemonic, the end times of the two phases of the voting process, and the encrypted and decrypted records. The contract also includes an event LogDecryption to log the decryption of a proposal's data.
